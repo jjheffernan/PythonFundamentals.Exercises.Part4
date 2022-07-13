@@ -9,7 +9,7 @@ fib_Array = {0: 0, 1: 1}  # declare dictionary
 
 def fibonacci(n):
     # n = 0
-    x = 1
+    x = 0
     y = 1
     z = 0
 
@@ -17,7 +17,7 @@ def fibonacci(n):
         # print(f"{n} is not a correct input ")
         return fib_Array[n]
     else:
-        for i in range(1, n):
+        for i in range(2, n+1):
             z = x + y
             x = y
             y = z
